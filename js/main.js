@@ -51,7 +51,8 @@ function deleteWebsite(deleteIndex) {
 }
 function validateUrl(url) {
     // var regex = /^(https?:\/\/)?(w{3}\.)?\w+\.\w{2,}\/?(:\d{2,5})?(\/\w+)*$/
-    var regex = /^((http(s?)?):\/\/)?([wW]{3}\.)?[a-zA-Z\d\-.]+\.[a-zA-Z]{2,}(\.[a-zA-Z]{2,})?$/g;
+            
+    var regex = /^((http(s?)?):\/\/)?([wW]{3}\.)?[a-zA-Z\d\-.]+\.[a-zA-Z]{2,}(\.[a-zA-Z]{2,}\W?)?$/g;
     if (regex.test(url)) {
         websiteUrl.classList.replace('is-invalid', 'is-valid')
         return true;
