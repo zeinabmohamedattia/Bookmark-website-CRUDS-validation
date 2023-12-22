@@ -1,0 +1,114 @@
+* {
+    font-family: 'PT Sans', sans-serif;
+}
+
+body {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 251, 251, 0.2)), url(../imgs/shape.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1 {
+    font-size: 54px;
+    font-family: "Pacifico", cursive;
+    color: #BCA37F;
+}
+
+h1::after {
+    content: '';
+    width: 100%;
+    height: 25%;
+    background-color: #FCDBBF;
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    z-index: -1;
+    transition: all 0.5s;
+}
+
+h1:hover::after {
+    height: 50%;
+}
+
+h2 {
+    font-family: "Righteous", cursive;
+    font-size: 28px;
+    background-image: linear-gradient(to right, #9A4444, #DED0B6);
+    background-clip: text;
+    color: transparent;
+}
+
+#validBox {
+    z-index: 100;
+}
+
+.box-conent {
+    background-color: #ded0b6c0;
+}
+
+#validBox p {
+    font-family: 'Bree Serif', serif;
+    font-size: 20px;
+    color: #BCA37F;
+}
+
+ul {
+    list-style: none;
+}
+
+.subBtn {
+    color: white;
+    background-color: #BCA37F;
+    transition: all 0.5s;
+}
+
+.visBtn:hover,
+.subBtn:hover {
+    color: #BCA37F;
+    background-color: #FCDBBF;
+    border-color: #BCA37F;
+
+}
+
+.form-control:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #4a3f2c;
+    outline: 0;
+    box-shadow: 0 0 0 3px #aa906655;
+}
+
+.form-control {
+    background-color: rgba(189, 163, 128, 0.4);
+}
+
+.table {
+    --bs-table-color: #574940;
+    border-color: white;
+    --bs-table-bg: rgba(189, 163, 128, 0.4);
+}
+
+.tableBtn {
+    color: #ffffff;
+}
+
+.visBtn {
+    background-color: #947A66;
+
+
+}
+
+.delBtn {
+    background-color: #a52626c3;
+}
+
+.delBtn:hover {
+    color: white;
+    background-color: #a526266c;
+    border-color: #ffffff;
+}
+
+label {
+    color: #947A66;
+}
